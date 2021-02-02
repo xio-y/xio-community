@@ -79,6 +79,5 @@ public class MapperTest {
 
     @Test
     public void hahaha(){
-        System.out.println("abc".getBytes());
     }
 }
