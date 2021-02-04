@@ -9,9 +9,11 @@
 
 	<link rel="stylesheet" th:href="@{/css/global.css}" />         <!-- th:href="@{/  /}" 表示去static下面找-->
 
+<!--	jquery必须在bootstrap之前加载-->
+	<script th:src="@{/webframe/jquery.min.js.js}" crossorigin="anonymous"></script>
 	<script th:src="@{/webframe/bootstrap.min.js.js}" crossorigin="anonymous"></script>
 	<script th:src="@{/webframe/popper.min.js.js}" crossorigin="anonymous"></script>
-	<script th:src="@{/webframe/jquery.min.js.js}" crossorigin="anonymous"></script>
+
 	<script th:src="@{/js/global.js}"></script>
 	<script th:src="@{/js/index.js}"></script>
 
