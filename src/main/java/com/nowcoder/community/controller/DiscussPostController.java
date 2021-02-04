@@ -55,14 +55,14 @@ public class DiscussPostController implements CommunityConstant {
         return CommunityUtil.getJSONString(0, "发布成功!");
     }
 
-//    @RequestMapping(path = "/detail/{discussPostId}", method = RequestMethod.GET)
-//    public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Model model, Page page) {
-//        // 帖子
-//        DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
-//        model.addAttribute("post", post);
-//        // 作者
-//        User user = userService.findUserById(post.getUserId());
-//        model.addAttribute("user", user);
+    @RequestMapping(path = "/detail/{discussPostId}", method = RequestMethod.GET)
+    public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Model model, Page page) {
+        // 帖子
+        DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
+        model.addAttribute("post", post);
+        // 作者
+        User user = userService.findUserById(post.getUserId());
+        model.addAttribute("user", user);
 //
 //        // 评论分页信息
 //        page.setLimit(5);
@@ -116,7 +116,7 @@ public class DiscussPostController implements CommunityConstant {
 //
 //        model.addAttribute("comments", commentVoList);
 //
-//        return "/site/discuss-detail";
-//    }
+        return "/site/discuss-detail";
+    }
 
 }
