@@ -9,11 +9,13 @@ import com.nowcoder.community.util.MailClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
@@ -77,7 +79,15 @@ public class MapperTest {
         mailClient.sendMail("1599267511@qq.com","HTML",content);
     }
 
+    @Autowired
+    private RedisTemplate redisTemplate;
     @Test
     public void hahaha(){
+        redisTemplate.opsForValue().set("count",5);
+        System.out.println(redisTemplate.opsForValue().get("count"));
+        System.out.println(redisTemplate.opsForValue().increment("count"));
+
+        System.out.println(redisTemplate.hasKey("a"));
+        redisTemplate.expire("count",5, TimeUnit.SECONDS);
     }
 }
