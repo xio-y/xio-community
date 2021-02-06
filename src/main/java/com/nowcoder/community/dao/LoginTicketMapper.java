@@ -3,7 +3,10 @@ package com.nowcoder.community.dao;
 import com.nowcoder.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
+
+//因为登陆凭证后期优化，存入redis，数据库此表不用，故加上不推荐使用的注解
 @Mapper
+@Deprecated
 public interface LoginTicketMapper {
     //不使用xml文件，使用注解配置Mapper方法
     @Insert({
