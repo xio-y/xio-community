@@ -841,10 +841,4 @@ offset以及limit代表的是起始行和终止行，就是某一页的热门帖
 启用缓存优化后：qps达到了189左右，可以看到性能有明显的提升
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200122150727465.png)
 
-## 结语
 
-以上只是对本项目的相对比较重要的功能进行了总结，当然了这个项目还有一些其他的功能，比如SpringSecurity实现权限控制,文件上传到七牛云服务器，spring统一处理异常之类的。感兴趣的同学可以参考视频以及我提供的代码敲一敲。
-
-补：项目架构图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030408531994.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTkyNzIzNQ==,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200304091238700.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTkyNzIzNQ==,size_16,color_FFFFFF,t_70)
