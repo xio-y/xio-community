@@ -14,7 +14,7 @@
 > 9. SpringQuartz实现定时任务，完成热门帖子的分数计算模块
 > 10. 使用本地缓存Quartz缓存热门帖子优化热门帖子页面，提高了QPS（10 - 200）
 
-[项目代码github地址:htz_community](https://github.com/htqxs/htz_community)
+
 
 ## 项目准备
 
