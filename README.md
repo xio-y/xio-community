@@ -53,7 +53,7 @@
 - **将客户端会话数据不存到Session中而是存到数据库中：**
   关系型数据库性能较慢
   存到redis中（项目中采用的方式）
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200122150324266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTkyNzIzNQ==,size_16,color_FFFFFF,t_70)
+  [![6ynn29.jpg](https://s3.ax1x.com/2021/03/16/6ynn29.jpg)](https://imgtu.com/i/6ynn29)
 
 ### Kaptcha生成验证码
 
